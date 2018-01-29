@@ -20,7 +20,7 @@ function createIssue() {
       authorization: `token ${getToken()}`
     },
     body: JSON.stringify(postData)
-  }).then(res => getIssues))
+  }).then(res => getIssues)
 }
 
 function showResults(json) {

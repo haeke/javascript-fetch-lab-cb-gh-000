@@ -37,7 +37,7 @@ function forkRepo() {
     headers: {
       Authorization: `token 51aac03e2ec07ad3b8a457ed542dcad2d332ede5`
     }
-  }).then(res = res.json())
+  }).then(res => res.json())
   .then(res => showResults())
 }
 

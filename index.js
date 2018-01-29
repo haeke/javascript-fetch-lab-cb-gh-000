@@ -14,7 +14,7 @@ function createIssue() {
   const issueBody = document.getElementById('body').value;
   const postData = {title: issueTitle, body: issueBody };
 
-  fetch('https://api.github.com/repos/haeke/javascript-fetch-lab/issues', {
+  fetch(`https://api.github.com/repos/haeke/javascript-fetch-lab/issues`, {
     method: 'POST',
     headers: {
       authorization: `token ${getToken()}`

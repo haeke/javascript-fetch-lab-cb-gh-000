@@ -1,4 +1,4 @@
-const baseAPI = `https://api.github.com/`;`
+const baseAPI = `https://api.github.com/`;
 
 function getIssues() {
 	fetch('${baseAPI}repos/${fork}/issues')
@@ -32,7 +32,7 @@ function showResults(json) {
 }
 
 function forkRepo() {
-  const repo = 'learn-co-curriculum/javascript-fetch-lab'
+  const repo = `learn-co-curriculum/javascript-fetch-lab`;
   const token = '';
   fetch('${baseAPI}repos/${repo}/forks', {
   	method: 'POST',

@@ -32,7 +32,7 @@ function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
 
   //use fetch to fork it!
-  fetch('https://api.github.com/repos/haeke/forks', {
+  fetch('https://api.github.com/repos/${repo}/forks', {
     method: 'POST',
     headers: {
       Authorization: `token 51aac03e2ec07ad3b8a457ed542dcad2d332ede5`

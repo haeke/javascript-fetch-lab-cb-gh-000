@@ -16,7 +16,7 @@ function createIssue() {
 	const issueBody = document.getElementById('body').value
 	const postData = {title: issueTitle, body: issueBody}
 
-	fetch(`${baseAPI}repos/${userName}/javascript-fetch-lab/issues`, {
+	fetch(`${baseAPI}repos/learn-co-curriculum/javascript-fetch-lab/issues`, {
 		method: 'POST',
 		headers: {
 			Authorization: `token ${getToken()}`

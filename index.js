@@ -33,6 +33,7 @@ function showResults(json) {
 
 function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
+  const token = '';
   fetch('${baseAPI}repos/${repo}/forks', {
   	method: 'POST',
   	headers: {

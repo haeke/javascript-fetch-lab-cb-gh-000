@@ -1,4 +1,4 @@
-const baseAPI = 'https://api.github.com/'
+const baseAPI = 'api.github.com/'
 
 function getIssues() {
 	fetch('${baseAPI}repos/${fork}/issues')

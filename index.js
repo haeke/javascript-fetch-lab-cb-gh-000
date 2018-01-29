@@ -1,5 +1,5 @@
 function getIssues() {
-  fetch('https://api.github.com/${fork}/issues')
+  fetch('https://api.github.com/javascript-fetch-lab/issues')
     .then(res => res.json)
     .then(json => showIssues(json));
 }

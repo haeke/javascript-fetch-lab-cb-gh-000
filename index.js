@@ -18,7 +18,7 @@ function createIssue() {
     method: 'POST',
     headers: {
       authorization: `token ${getToken()}`
-    },
+    }
     body: JSON.stringify(postData)
   }).then(res => getIssues)
 }
